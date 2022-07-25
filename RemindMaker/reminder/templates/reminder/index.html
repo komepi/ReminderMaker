@@ -1,0 +1,8 @@
+<form action="{% url 'reminder:make' %}" method="post">
+    {% csrf_token%}
+    <input type="text" name="title" id="title">
+    <input type="text" name="detail" id="detail">
+    <input type="checkbox" id="is_notification"><label for="is_notification">通知の有無</label>
+    
+    <input type="submit" value="make">
+</form>
